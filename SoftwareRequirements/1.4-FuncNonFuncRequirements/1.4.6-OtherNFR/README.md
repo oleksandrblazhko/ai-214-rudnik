@@ -6,4 +6,5 @@
 |FR1.4|NFR1.5|Human Factors Requirements|Потрібна дія з боку людини|
 |FR1.5|NFR1.6|Human Factors Requirements|Потрібна дія з боку людини|
 |FR2.1|NFR2.2|Time Performance|Максимальний час реакції програмного продукту на натискання кнопки та завантаження результатів складає 5 секунд|
+|FR2.2|NFR2.3|Network|Наявність WI-FI чи іншого інтернет зв'язку|
 |FR2.3|NFR2.4|Human Factors Requirements|Потрібна дія з боку людини|
