@@ -1,0 +1,110 @@
+{
+  "title": "Record of employee",
+  "description": "This document records the details of an employee",
+  "type": "object",
+  "properties": {
+    "Users": {
+      "description": "Details of users",
+      "type": "object",
+      "properties": {
+        "": {
+          "type": "object",
+          "properties": {
+            "login": {
+              "type": "string",
+              "description": "Login of the user"
+            },
+            "password": {
+              "type": "string",
+              "description": "Password of the user"
+            },
+            "email": {
+              "type": "string",
+              "description": "Email of the user"
+            }
+          }
+        }
+      }
+    },
+    "Requests": {
+      "description": "Details of requests",
+      "type": "object",
+      "properties": {
+        "": {
+          "type": "object",
+          "properties": {
+            "purpose": {
+              "type": "string",
+              "description": "Purpose of the request"
+            },
+            "date": {
+              "type": "string",
+              "description": "Date of the request"
+            }
+          }
+        }
+      }
+    },
+    "Medical Employee": {
+      "description": "Details of medical employees",
+      "type": "object",
+      "properties": {
+        "": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the medical employee"
+            },
+            "specialization": {
+              "type": "string",
+              "description": "Specialization of the medical employee"
+            }
+          }
+        }
+      }
+    },
+    "Responses to Requests": {
+      "description": "Details of responses to requests",
+      "type": "object",
+      "properties": {
+        "": {
+          "type": "object",
+          "properties": {
+            "response text": {
+              "type": "string",
+              "description": "Response text for the request"
+            },
+            "date": {
+              "type": "string",
+              "description": "Date of the response"
+            }
+          }
+        }
+      }
+    },
+    "List of writings": {
+      "description": "Details of writings",
+      "type": "object",
+      "properties": {
+        "": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the writing"
+            },
+            "genre": {
+              "type": "string",
+              "description": "Genre of the writing"
+            },
+            "author": {
+              "type": "string",
+              "description": "Author of the writing"
+            }
+          }
+        }
+      }
+    }
+  }
+}
