@@ -1,0 +1,151 @@
+{
+  "title": "Record of employee",
+  "description": "This document records the details of an employee",
+  "type": "object",
+  "properties": {
+    "Users": {
+      "description": "Details of users",
+      "type": "object",
+      "properties": {
+        "1": {
+          "type": "object",
+          "properties": {
+            "login": {
+              "type": "string",
+              "description": "Login of the user",
+              "pattern": "^[a-zA-Z][a-zA-Z0-9._+-]{5,20}$"
+            },
+            "password": {
+              "type": "string",
+              "description": "Password of the user",
+              "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*)(?=.*[@$!%*?&])[A-Za-z@$!%*?&]{5,20}$"
+            },
+            "email": {
+              "type": "string",
+              "description": "Email of the user",
+              "format": "email"
+            }
+          },
+          "required": [
+            "login",
+            "password",
+            "email"
+          ]
+        }
+      },
+      "Requests": {
+        "description": "Details of requests",
+        "type": "object",
+        "properties": {
+          "1": {
+            "type": "object",
+            "properties": {
+              "purpose": {
+                "type": "string",
+                "description": "Purpose of the request",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "date": {
+                "type": "string",
+                "description": "Date of the request",
+                "format": "date"
+              }
+            }
+          },
+          "required": [
+            "purpose",
+            "date"
+          ]
+        }
+      },
+      "Medical Employee": {
+        "description": "Details of medical employees",
+        "type": "object",
+        "properties": {
+          "1": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the medical employee",
+                "minLength": 1,
+                "maxLength": 50
+              },
+              "specialization": {
+                "type": "string",
+                "description": "Specialization of the medical employee",
+                "minLength": 1,
+                "maxLength": 50
+              }
+            }
+          },
+          "required": [
+            "name",
+            "specialization"
+          ]
+        }
+      },
+      "Responses to Requests": {
+        "description": "Details of responses to requests",
+        "type": "object",
+        "properties": {
+          "1": {
+            "type": "object",
+            "properties": {
+              "response text": {
+                "type": "string",
+                "description": "Response text for the request",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "date": {
+                "type": "string",
+                "description": "Date of the response",
+                "format": "date"
+              }
+            }
+          },
+          "required": [
+            "response text",
+            "date"
+          ]
+        }
+      },
+      "List of writings": {
+        "description": "Details of writings",
+        "type": "object",
+        "properties": {
+          "1": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the writing",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "genre": {
+                "type": "string",
+                "description": "Genre of the writing",
+                "minLength": 1,
+                "maxLength": 20
+              },
+              "author": {
+                "type": "string",
+                "description": "Author of the writing",
+                "minLength": 1,
+                "maxLength": 50
+              }
+            }
+          },
+          "required": [
+            "name",
+            "genre",
+            "author"
+          ]
+        }
+      }
+    }
+  }
+}
