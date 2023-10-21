@@ -1,0 +1,29 @@
+@startuml
+
+hide circle
+title UML Concept Classes 
+
+Class User {
+    login
+    password
+    email
+}
+
+Class PhysicalRequest {
+    purpose
+    date
+}
+
+Class MedicalEmoloyee {
+    name
+    specialization
+}
+
+User"1" --> "*"PhysicalRequest : send
+
+User <|-- MedicalEmoloyee
+
+MedicalEmoloyee"1" --> "*"PhysicalRequest : review
+
+@enduml
+
