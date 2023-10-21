@@ -2,13 +2,12 @@
 title Activity Diagram 
 
 start
+repeat
 :User enters login and password;
 :Program analyzes entered user data;
-if (Is data correct?) then (Yes)
-  :Correct;
-else (No)
-  :Incorrect;
-endif
+
+repeat while (Is data correct?) is (no)
+:Correct;
 stop
 
 @enduml
