@@ -9,8 +9,7 @@ if (Is data correct?) then (Yes)
 else (No)
   :Incorrect;
   :Error: Invalid data;
-  --> start
-  stop
+  --> User enters login and password
 endif
 stop
 
