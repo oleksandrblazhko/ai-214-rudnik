@@ -123,19 +123,22 @@
                 "type": "string",
                 "description": "Name of the writing",
                 "minLength": 1,
-                "maxLength": 100
+                "maxLength": 100,
+                "pattern": "^[A-Za-z]+$"
               },
               "genre": {
                 "type": "string",
                 "description": "Genre of the writing",
                 "minLength": 1,
-                "maxLength": 20
+                "maxLength": 20,
+                "pattern": "^[A-Za-z]+$"
               },
               "author": {
                 "type": "string",
                 "description": "Author of the writing",
                 "minLength": 1,
-                "maxLength": 50
+                "maxLength": 50,
+                "pattern": "^[A-Za-z]+$"
               }
             }
           },
