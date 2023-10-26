@@ -1,0 +1,33 @@
+@startjson
+
+title JSON Data
+{
+  "User": {
+    "id": "1",
+    "login": "username",
+      "password": "********",
+      "email": "name@gmail.com",
+  "Requests": {
+    "id": "1",
+    "purpose": "Запит на вимірювання фізичного стану",
+    "date": "07.10.2023"
+    },
+  "Medical Employee": {
+    "id": "1",
+    "name": "Степан",
+    "specialization": "Гл.Лікар"
+    },
+  "Responses to Requests": {
+    "id": "1",
+    "response text": "Вітаю, приходьте 15.10.2023 о 10 годині ранку",
+    "date": "12.10.2023"
+    },
+  "List of writings": {
+    "id": "1",
+    "name": "Сон (У всякого своя доля...)",
+    "genre": "Комедія",
+    "author": "Тарас Шевченко"
+    }
+  }
+}
+@endjson
