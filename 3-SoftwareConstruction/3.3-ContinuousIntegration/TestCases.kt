@@ -1,5 +1,3 @@
-package com.nuop.tscp
-
 data class WorksList(
     var worksCode: String = "",
     var worksName: String = "",
